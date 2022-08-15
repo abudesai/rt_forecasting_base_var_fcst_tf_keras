@@ -1,0 +1,30 @@
+[
+  {
+    "name": "max_hist_len_multiple_of_fcst_len",
+    "short_desc": "Multiplier that determines max length of history for training. Value = 3 means history_len is 3x fcst_len.",
+    "default": 4,
+    "type": "int",
+    "range_low": 3,
+    "range_high": 6,
+    "search_type": "uniform",
+    "run_HPO": true
+  },
+  {
+    "name": "activation",
+    "short_desc": "Activation function in hidden layers of the neural network. One of two types: [ 'relu', 'tanh' ]",
+    "default": "tanh",
+    "type": "categorical",
+    "categorical_vals": ["relu", "tanh"],
+    "run_HPO": true
+  },
+  {
+    "name": "lr",
+    "short_desc": "Learning rate for optimizer.",
+    "default": 5e-5,
+    "type": "real",
+    "range_low": 1e-5,
+    "range_high": 1e-3,
+    "search_type": "log-uniform",
+    "run_HPO": true
+  }
+]

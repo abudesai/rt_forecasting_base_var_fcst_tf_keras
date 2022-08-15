@@ -1,0 +1,7 @@
+{
+  "max_hist_len_multiple_of_fcst_len": 4,
+  "reconstruction_wt": 50,
+  "first_hidden_dim": 200,
+  "second_hidden_dim": 100,
+  "latent_dim": 4
+}
